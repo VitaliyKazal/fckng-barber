@@ -1,0 +1,153 @@
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'PT Sans', sans-serif;
+	font-size: 16px; 
+}
+
+.container {
+	max-width: 970px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 15px;
+}
+
+.row {
+	margin: 0 -15px;
+	clear: both;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:after,
+.row:before {
+	content: '';
+	display: table;
+}
+
+.clearfix:after,
+.row:after {
+	clear: both;
+}
+
+.col-1, 
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+	float:left;
+	padding: 0 15px;
+}
+
+.col-1 {
+	width: 8.3333%;
+}
+.col-2 {
+	width: 16.6666%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.3333%;
+}
+.col-5 {
+	width: 41.6666%;
+}
+.col-6 {
+	width:50%;
+}
+.col-7 {
+	width: 57.4795%;
+}
+.col-8 {
+	width:66.6666%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.3333%;
+}
+.col-11 {
+	width: 91.6674%;
+}
+.col-12 {
+	width: 100%;
+}
+
+.banner {
+	background-image: url(./img/tint.png);
+	background-position: center;
+	background-size: cover;
+	min-width: 1200px;
+}
+.header {
+	width: 100%;
+	background-color: #0c0c0c;
+	padding: 26px 35px 0 35px;
+}
+
+.header__link {
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	border-bottom: 2px transparent solid; 
+	padding-bottom: 24px;
+}
+
+.header__link:hover {
+	border-bottom: 2px #ffffff solid;
+
+}
+.header__link img {
+	display: inline-block;
+	vertical-align: middle;
+}
+.header__nav {
+	display: inline-block;
+	margin: 0 auto; /* благодаря этому у меня все выравнивается по центру*/
+	padding: 0;
+	vertical-align: middle;
+	float: left;
+}
+
+.header__nav li {
+	display: inline-block;
+	padding-right: 35px;
+}
+
+.header__nav li:last-child {
+	padding-right: 0;
+}
+
+.header__nav_link {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	border-bottom: 2px transparent solid; 
+	padding-bottom: 24px;
+}
+
+.header__nav_link:hover {
+	border-bottom: 2px #ffffff solid;
+}
