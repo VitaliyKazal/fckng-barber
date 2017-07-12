@@ -13,14 +13,14 @@ body {
 }
 
 .container {
-	max-width: 970px;
+	max-width: 980px;
 	margin-right: auto;
 	margin-left: auto;
-	padding: 0 15px;
+	padding: 0 10px;
 }
 
 .row {
-	margin: 0 -15px;
+	margin: 0 -10px;
 	clear: both;
 }
 
@@ -50,7 +50,7 @@ body {
 .col-11,
 .col-12 {
 	float:left;
-	padding: 0 15px;
+	padding: 0 10px;
 }
 
 .col-1 {
@@ -94,12 +94,12 @@ body {
 	background-image: url(./img/tint.png);
 	background-position: center;
 	background-size: cover;
-	min-width: 1200px;
+	background-repeat: no-repeat;
 }
+
 .header {
-	width: 100%;
 	background-color: #0c0c0c;
-	padding: 26px 35px 0 35px;
+	padding-top: 26px;
 }
 
 .header__link {
@@ -150,4 +150,22 @@ body {
 
 .header__nav_link:hover {
 	border-bottom: 2px #ffffff solid;
+}
+
+.adventage_logo {
+	margin:55px auto 75px auto;
+	text-align: center;
+}
+
+.adventage_items__item {
+	text-align: center;
+	color: white;
+}
+
+.adventage_items__title {
+	font-size: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+	line-height: 1;
+	margin-bottom: 23px;
 }
