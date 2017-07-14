@@ -208,7 +208,7 @@ body {
 	box-shadow:inset 4px 0 5px 0 #ceccc9;
 }
 
-.price_padding {
+.price-padding {
 	padding: 10px 0;
 }
 
@@ -220,33 +220,67 @@ body {
 	padding-top: 50px;
 }
 
-.price_items__contant_news {
+.price_items__contant {
 	margin: 0;
 	padding-left: 80px;
 	line-height: 1.6;
 	font-size: 14px;
+	text-transform: uppercase;
 }
 
-.price_items__contant_news h4 {
+.price_items__contant h4 {
 	margin:0;
 }
 
-.price_items__contant_news h4:first-child {
+.price_items__contant h4:first-child {
 	padding-top: 40px;
 	font-weight: bold;
 }
 
-.price_items__contant_news p {
+.price_items__contant p {
 	margin: 0;
 	padding-bottom: 40px;
 }
 
-.contant_news__button_news {
+.price_contant__button {
 	border: 1px #000000 solid;
-	padding: 15px 35px;
+	padding: 15px 30px;
 	color: white;
 	background-color: #000000;
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
+}
+
+.price_items__contant img {
+	margin: 50px 0 40px 0;
+}
+
+.price__button_prew {
+	border: 1px #000000 solid;
+	padding: 16px 40px;
+	color: white;
+	background-color: #000000;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-right: 20px;
+}
+
+.price__button_next {
+	border: 1px #000000 solid;
+	padding: 16px 40px;
+	color: white;
+	background-color: #000000;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.price_items__contant-margin h4 {
+	margin-bottom: 40px;
+}
+
+.button_map {
+	margin-right: 20px;
 }
