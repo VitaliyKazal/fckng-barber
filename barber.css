@@ -9,7 +9,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'PT Sans', sans-serif;
-	font-size: 16px; 
+	font-size: 14px; 
 }
 
 .container {
@@ -102,26 +102,30 @@ body {
 	padding-top: 26px;
 }
 
-.header__link {
+.header__user_block {
 	display: inline-block;
 	vertical-align: middle;
 	float: right;
+	border-bottom: 2px transparent solid; 
+	padding-bottom: 24px;
+}
+.header_login {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #ffffff;
-	border-bottom: 2px transparent solid; 
+}
+
+.header_login:hover {
+	border-bottom: 2px #ffffff solid;
 	padding-bottom: 24px;
 }
 
-.header__link:hover {
-	border-bottom: 2px #ffffff solid;
-
-}
-.header__link img {
+.header__user_block img {
 	display: inline-block;
 	vertical-align: middle;
 }
+
 .header__nav {
 	display: inline-block;
 	margin: 0 auto; /* благодаря этому у меня все выравнивается по центру*/
@@ -201,11 +205,11 @@ body {
 .price_items__item {
 	background-color: white;
 	color:black;
-	min-height: 430px;
+	height: 440px;
 }
 
 .price_items__item:hover {
-	box-shadow:inset 4px 0 5px 0 #ceccc9;
+	box-shadow:inset 4px 0 7px 0 #ceccc9;
 }
 
 .price-padding {
@@ -222,19 +226,16 @@ body {
 
 .price_items__contant {
 	margin: 0;
+	padding-top: 40px;
 	padding-left: 80px;
-	line-height: 1.6;
+	padding-right:60px; 
+}
+
+.price_items__contant b {
+	font-weight: bold;
 	font-size: 14px;
 	text-transform: uppercase;
-}
 
-.price_items__contant h4 {
-	margin:0;
-}
-
-.price_items__contant h4:first-child {
-	padding-top: 40px;
-	font-weight: bold;
 }
 
 .price_items__contant p {
@@ -253,7 +254,7 @@ body {
 }
 
 .price_items__contant img {
-	margin: 50px 0 40px 0;
+	margin-bottom: 40px;
 }
 
 .price__button_prew {
@@ -277,10 +278,160 @@ body {
 	font-weight: 700;
 }
 
-.price_items__contant-margin h4 {
-	margin-bottom: 40px;
+.contant__adress {
+	margin-bottom: 50px;
 }
 
-.button_map {
+.contant__worktime {
+	margin-bottom: 65px;
+}
+
+.price_items__button_map {
+	border: 1px #000000 solid;
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 25px;
+	color: white;
+	background-color: #000000;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
 	margin-right: 20px;
+}
+
+.price_items__button_recall {
+	border: 1px #000000 solid;
+	padding-left: 25px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 20px;
+	color: white;
+	background-color: #000000;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+.price_items__contant__input {
+	width: 135px;
+	height: 40px;
+	margin-top: 10px;
+	margin-right: 20px;
+	margin-bottom: 10px;
+	padding: 15px 16px 14px;
+	vertical-align: middle;
+	border-color: black;
+}
+
+.price_items__contant__input::-webkit-input-placeholder { 
+	color: black;
+	font-weight: 700;
+}
+
+.price_items__contant__input::-moz-input-placeholder { 
+	color: black;
+	font-weight: 700;
+}
+
+.contant__note p {
+	margin:0;
+	padding-bottom: 20px;
+}
+.price_items__sent_button {
+	width: 300px;
+	margin-top: 30px;
+    display: inline-block;
+    padding: 17px 0;
+    background-color: black;
+    text-align: center;
+    border: 1px #000000 bold;
+}
+
+.price_items__sent_button a {
+	color: white;
+	text-transform: uppercase;
+	font-weight: 700;
+}
+
+.footer {
+	background-color: #1f1f1f;
+	padding-top: 60px;
+}
+
+.footer__contact p {
+	margin-top: 0px;
+	margin-bottom: 45px;
+}
+
+.footer__contact b {
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.footer__social_list__title {
+	text-align: center;
+}
+
+.footer__social_list__title b {
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.footer__social_list__main {
+	margin-top: 20px;
+	text-align:center;
+}
+.footer__social_link {
+	display: inline-block;
+	vertical-align: middle;
+	margin-right: 6px;
+	margin-left: 0;
+	width: 43px;
+	height: 43px;
+}
+
+.footer__social_list__main a {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: black;
+}
+.social_vk {
+	background-image: url(./img/vk.png);
+	
+}
+
+.social_f {
+	background-image: url(./img/f.png);
+}
+
+.social_insta {
+	background-image: url(./img/inst.png);
+}
+
+.footer__create {
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+	text-align: right;
+	padding-right: 40px;
+	margin-bottom: 35px;
+}
+
+.footer__create_button {
+	border: 1px #000000 solid;
+	padding-left: 30px;
+	padding-top: 15px;
+	padding-bottom: 15px;
+	padding-right: 25px;
+	color: white;
+	background-color: #000000;
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin:0 100px 0;
 }
