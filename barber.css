@@ -109,24 +109,25 @@ body {
 	border-bottom: 2px transparent solid; 
 	padding-bottom: 24px;
 }
-.header_login {
-	font-size: 16px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #ffffff;
-}
-
-.header_login:hover {
-	border-bottom: 2px #ffffff solid;
-	padding-bottom: 24px;
-}
 
 .header__user_block img {
 	display: inline-block;
 	vertical-align: middle;
 }
 
-.header__nav {
+.header__login {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+}
+
+.header__login:hover {
+	border-bottom: 2px #ffffff solid;
+	padding-bottom: 24px;
+}
+
+.header__navigator {
 	display: inline-block;
 	margin: 0 auto; /* благодаря этому у меня все выравнивается по центру*/
 	padding: 0;
@@ -134,16 +135,16 @@ body {
 	float: left;
 }
 
-.header__nav li {
+.header__navigator li {
 	display: inline-block;
 	padding-right: 35px;
 }
 
-.header__nav li:last-child {
+.header__navigator li:last-child {
 	padding-right: 0;
 }
 
-.header__nav_link {
+.header__navigator_link {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
@@ -152,7 +153,7 @@ body {
 	padding-bottom: 24px;
 }
 
-.header__nav_link:hover {
+.header__navigator_link:hover {
 	border-bottom: 2px #ffffff solid;
 }
 
@@ -222,6 +223,7 @@ body {
 	text-transform: uppercase;
 	padding-left: 80px;
 	padding-top: 50px;
+	margin: 0;
 }
 
 .price_items__contant {
@@ -235,15 +237,20 @@ body {
 	font-weight: bold;
 	font-size: 14px;
 	text-transform: uppercase;
-
 }
 
-.price_items__contant p {
+.conatant_news p {
 	margin: 0;
-	padding-bottom: 40px;
+	text-transform: uppercase;
+	font-weight: 700;
 }
 
-.price_contant__button {
+.conatant_news time {
+	margin-bottom: 35px;
+	display: block;
+}
+
+.contant_news__button {
 	border: 1px #000000 solid;
 	padding: 15px 30px;
 	color: white;
@@ -251,13 +258,14 @@ body {
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
+	display: inline-block;
 }
 
 .price_items__contant img {
 	margin-bottom: 40px;
 }
 
-.price__button_prew {
+.price_gallery__button_prew {
 	border: 1px #000000 solid;
 	padding: 16px 40px;
 	color: white;
@@ -268,7 +276,7 @@ body {
 	margin-right: 20px;
 }
 
-.price__button_next {
+.price_gallery__button_next {
 	border: 1px #000000 solid;
 	padding: 16px 40px;
 	color: white;
@@ -278,15 +286,16 @@ body {
 	font-weight: 700;
 }
 
-.contant__adress {
+.contant_contact__adress {
 	margin-bottom: 50px;
 }
 
-.contant__worktime {
-	margin-bottom: 65px;
+.contant_contact__worktime {
+	margin-bottom: 50px;
 }
 
-.price_items__button_map {
+.contant_contact__button_map {
+	display: inline-block;
 	border: 1px #000000 solid;
 	padding-left: 30px;
 	padding-top: 15px;
@@ -300,7 +309,8 @@ body {
 	margin-right: 20px;
 }
 
-.price_items__button_recall {
+.contant_contact__button_recall {
+	display: inline-block;
 	border: 1px #000000 solid;
 	padding-left: 25px;
 	padding-top: 15px;
@@ -312,7 +322,7 @@ body {
 	text-transform: uppercase;
 	font-weight: 700;
 }
-.price_items__contant__input {
+.contant_note__input {
 	width: 135px;
 	height: 40px;
 	margin-top: 10px;
@@ -323,21 +333,21 @@ body {
 	border-color: black;
 }
 
-.price_items__contant__input::-webkit-input-placeholder { 
+.contant_note__input::-webkit-input-placeholder { 
 	color: black;
 	font-weight: 700;
 }
 
-.price_items__contant__input::-moz-input-placeholder { 
+.contant_note__input::-moz-input-placeholder { 
 	color: black;
 	font-weight: 700;
 }
 
-.contant__note p {
+.contant_note p {
 	margin:0;
 	padding-bottom: 20px;
 }
-.price_items__sent_button {
+.contant_note__sent_button {
 	width: 300px;
 	margin-top: 30px;
     display: inline-block;
@@ -345,12 +355,13 @@ body {
     background-color: black;
     text-align: center;
     border: 1px #000000 bold;
-}
-
-.price_items__sent_button a {
-	color: white;
+    color: white;
 	text-transform: uppercase;
 	font-weight: 700;
+}
+
+.contant_note__input_block button{
+	border:none;
 }
 
 .footer {
@@ -363,7 +374,7 @@ body {
 	margin-bottom: 45px;
 }
 
-.footer__contact b {
+.footer__contact b, a {
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
@@ -385,6 +396,7 @@ body {
 	margin-top: 20px;
 	text-align:center;
 }
+
 .footer__social_link {
 	display: inline-block;
 	vertical-align: middle;
@@ -401,7 +413,6 @@ body {
 }
 .social_vk {
 	background-image: url(./img/vk.png);
-	
 }
 
 .social_f {
@@ -412,16 +423,20 @@ body {
 	background-image: url(./img/inst.png);
 }
 
-.footer__create {
+.footer__create b{
+	display: block;
 	font-weight: 700;
 	font-size: 14px;
 	text-transform: uppercase;
 	color: white;
 	text-align: right;
 	padding-right: 40px;
-	margin-bottom: 35px;
+	margin-bottom: 20px;
 }
-
+.footer_create-position_link {
+	text-align: right;
+	margin-right: 35px;
+}
 .footer__create_button {
 	border: 1px #000000 solid;
 	padding-left: 30px;
@@ -433,5 +448,6 @@ body {
 	font-size: 14px;
 	text-transform: uppercase;
 	font-weight: 700;
-	margin:0 100px 0;
+	display: inline-block;
+	text-align:right;
 }
