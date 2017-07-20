@@ -8,7 +8,7 @@ a {
 body {
 	padding: 0;
 	margin: 0;
-	font-family: 'PT Sans', sans-serif;
+	font-family: 'PT Sans Narrow', sans-serif;
 	font-size: 14px; 
 }
 
@@ -106,24 +106,26 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	float: right;
-	border-bottom: 2px transparent solid; 
+	border-bottom: 4px transparent solid; 
 	padding-bottom: 24px;
+	margin-right: 39px;
 }
 
 .header__user_block img {
-	display: inline-block;
-	vertical-align: middle;
+	padding-right: 10px;
+    vertical-align: middle;
 }
 
 .header__login {
 	font-size: 16px;
-	font-weight: 700;
-	text-transform: uppercase;
-	color: #ffffff;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    vertical-align: middle;
 }
 
 .header__login:hover {
-	border-bottom: 2px #ffffff solid;
+	border-bottom: 4px #ffffff solid;
 	padding-bottom: 24px;
 }
 
@@ -137,10 +139,12 @@ body {
 
 .header__navigator li {
 	display: inline-block;
-	padding-right: 35px;
+	padding-right: 15px;
+    padding-left: 24px;
 }
 
 .header__navigator li:last-child {
+	padding-left: 30px;
 	padding-right: 0;
 }
 
@@ -154,63 +158,81 @@ body {
 }
 
 .header__navigator_link:hover {
-	border-bottom: 2px #ffffff solid;
+	border-bottom: 4px #ffffff solid;
 }
 
 .adventage_logo {
-	margin:55px auto 75px auto;
+	margin:58px auto 71px auto;
 	text-align: center;
 }
 
 .adventage_items__item {
 	text-align: center;
 	color: white;
+	padding: 0 10px;
 }
 
 .adventage_items__title {
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	line-height: 1;
-	margin-bottom: 23px;
+	line-height: 30px;
+	margin-bottom: 19px;
 }
 
 .adventage_items__figure_position {
 	display: inline-block;
-	text-align: center;
-	padding-top:6px;
+    text-align: center;
+    padding-top: 6px;
 }
 
 .adventage_items__figure {
-	height: 28px;
-	width: 28px;
+	height: 19px;
+	width: 19px;
 	transform: rotate(45deg);
 	background-color: white;
 	display: block;
 	margin: 0;
 }
 
+.item_cool-padding {
+	padding-right: 10px;
+}
+
+.item_expensive-padding {
+	padding-right: 25px; 
+}
+
 .adventage_items__contet p {
 	font-size: 14px;
 	text-transform: uppercase;
-	margin-top: 34px;
+	margin-top: 27px;
 	font-weight: bold;
 	text-align: center;
-	line-height: normal;
+	line-height: 22px;
+	margin-bottom: 80px;
 }
 
 .price_items {
 	padding: 0 10px;
 }
 
-.price_items__item {
-	background-color: white;
-	color:black;
-	height: 440px;
+.price_items>.prise_block:last-child {
+	margin-bottom: 65px;
 }
 
-.price_items__item:hover {
-	box-shadow:inset 4px 0 7px 0 #ceccc9;
+.prise_block {
+	background-color: white;
+	margin-bottom: 34px;
+	background-image: url(./img/layer.png);
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.price_items__item {
+	color:black;
+	height: 430px;
 }
 
 .price-padding {
@@ -221,16 +243,17 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding-left: 80px;
-	padding-top: 50px;
-	margin: 0;
+	padding-top: 46px;
+    padding-left: 77px;
+    margin:0;
 }
 
 .price_items__contant {
 	margin: 0;
-	padding-top: 40px;
-	padding-left: 80px;
-	padding-right:60px; 
+	padding-top: 28px;
+	padding-left: 75px;
+	padding-right:65px; 
+	line-height: 22px;
 }
 
 .price_items__contant b {
@@ -243,51 +266,62 @@ body {
 	margin: 0;
 	text-transform: uppercase;
 	font-weight: 700;
+	line-height: 23px;
 }
 
 .conatant_news time {
-	margin-bottom: 35px;
+	margin-bottom: 30px;
 	display: block;
 }
 
 .contant_news__button {
-	border: 1px #000000 solid;
-	padding: 15px 30px;
-	color: white;
-	background-color: #000000;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 700;
-	display: inline-block;
+    border: 1px #000000 solid;
+    color: white;
+    background-color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    min-width: 140px;
+    min-height: 41px;
+    text-align: center;
+    padding-top: 11px;
+    margin-top: 5px;
 }
 
 .price_items__contant img {
-	margin-bottom: 40px;
+    margin-bottom: 38px;
+    margin-top: 12px;
+    margin-left: 5px;
 }
 
 .price_gallery__button_prew {
-	border: 1px #000000 solid;
-	padding: 16px 40px;
-	color: white;
-	background-color: #000000;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 700;
-	margin-right: 20px;
+    border: 1px #000000 solid;
+    color: white;
+    background-color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 17px;
+    display: inline-block;
+    min-width: 140px;
+    min-height: 44px;
 }
 
 .price_gallery__button_next {
-	border: 1px #000000 solid;
-	padding: 16px 40px;
-	color: white;
-	background-color: #000000;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 700;
+    border: 1px #000000 solid;
+    padding: 13px 43px;
+    color: white;
+    background-color: #000000;
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 700;
+    min-width: 140px;
+    min-height: 45px;
 }
 
 .contant_contact__adress {
-	margin-bottom: 50px;
+	margin-bottom: 30px;
 }
 
 .contant_contact__worktime {
@@ -296,36 +330,36 @@ body {
 
 .contant_contact__button_map {
 	display: inline-block;
-	border: 1px #000000 solid;
-	padding-left: 30px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-right: 25px;
-	color: white;
-	background-color: #000000;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 700;
-	margin-right: 20px;
+    border: 1px #000000 solid;
+    color: white;
+    background-color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    margin-right: 17px;
+    min-width: 140px;
+    min-height: 44px;
+    text-align: center;
+    padding-top: 10px;
 }
 
 .contant_contact__button_recall {
-	display: inline-block;
-	border: 1px #000000 solid;
-	padding-left: 25px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-right: 20px;
-	color: white;
-	background-color: #000000;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 700;
+    display: inline-block;
+    border: 1px #000000 solid;
+    color: white;
+    background-color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    min-width: 140px;
+    min-height: 44px;
+    text-align: center;
+    padding-top: 10px;
 }
 .contant_note__input {
-	width: 135px;
+	width: 138px;
 	height: 40px;
-	margin-top: 10px;
+	margin-top: 13px;
 	margin-right: 20px;
 	margin-bottom: 10px;
 	padding: 15px 16px 14px;
@@ -345,19 +379,18 @@ body {
 
 .contant_note p {
 	margin:0;
-	padding-bottom: 20px;
+	padding-bottom: 17px;
 }
 .contant_note__sent_button {
-	width: 300px;
-	margin-top: 30px;
-    display: inline-block;
-    padding: 17px 0;
+    min-width: 300px;
+    min-height: 44px;
+    margin-top: 26px;
+    display: block;
     background-color: black;
     text-align: center;
-    border: 1px #000000 bold;
     color: white;
-	text-transform: uppercase;
-	font-weight: 700;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 .contant_note__input_block button{
@@ -366,12 +399,13 @@ body {
 
 .footer {
 	background-color: #1f1f1f;
-	padding-top: 60px;
+	padding-top: 58px;
 }
 
 .footer__contact p {
 	margin-top: 0px;
 	margin-bottom: 45px;
+	line-height: 23px;
 }
 
 .footer__contact b, a {
@@ -390,20 +424,25 @@ body {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: white;
+	margin-left: -8px;
 }
 
 .footer__social_list__main {
-	margin-top: 20px;
+	margin-top: 18px;
 	text-align:center;
 }
 
 .footer__social_link {
 	display: inline-block;
 	vertical-align: middle;
-	margin-right: 6px;
-	margin-left: 0;
-	width: 43px;
-	height: 43px;
+    margin-right: 7px;
+    margin-left: -6px;
+    width: 43px;
+    height: 43px;
+}
+
+.footer__social_link:last-child {
+	margin: 0;
 }
 
 .footer__social_list__main a {
@@ -430,24 +469,23 @@ body {
 	text-transform: uppercase;
 	color: white;
 	text-align: right;
-	padding-right: 40px;
+	padding-right: 48px;
 	margin-bottom: 20px;
 }
 .footer_create-position_link {
 	text-align: right;
-	margin-right: 35px;
+	padding-right: 15px;
 }
 .footer__create_button {
-	border: 1px #000000 solid;
-	padding-left: 30px;
-	padding-top: 15px;
-	padding-bottom: 15px;
-	padding-right: 25px;
-	color: white;
-	background-color: #000000;
-	font-size: 14px;
-	text-transform: uppercase;
-	font-weight: 700;
-	display: inline-block;
-	text-align:right;
+    border: 1px #000000 solid;
+    color: white;
+    background-color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    min-width: 140px;
+    min-height: 44px;
+    text-align: center;
+    padding-top: 11px;
 }
