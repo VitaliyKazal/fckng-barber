@@ -1,0 +1,414 @@
+* {
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+}
+
+body {
+	padding: 0;
+	margin: 0;
+	font-family: 'PT Sans Narrow', sans-serif;
+	font-size: 14px; 
+}
+
+.container {
+	max-width: 940px;
+	margin-right: auto;
+	margin-left: auto;
+	padding: 0 10px;
+}
+
+.row {
+	margin: 0 -10px;
+	clear: both;
+}
+
+.clearfix:before,
+.clearfix:after,
+.row:after,
+.row:before {
+	content: '';
+	display: table;
+}
+
+.clearfix:after,
+.row:after {
+	clear: both;
+}
+
+.col-1, 
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+	float:left;
+	padding: 0 10px;
+}
+
+.col-1 {
+	width: 8.3333%;
+}
+.col-2 {
+	width: 16.6666%;
+}
+.col-3 {
+	width: 25%;
+}
+.col-4 {
+	width: 33.3333%;
+}
+.col-5 {
+	width: 41.6666%;
+}
+.col-6 {
+	width:50%;
+}
+.col-7 {
+	width: 57.4795%;
+}
+.col-8 {
+	width:66.6666%;
+}
+.col-9 {
+	width: 75%;
+}
+.col-10 {
+	width: 83.3333%;
+}
+.col-11 {
+	width: 91.6674%;
+}
+.col-12 {
+	width: 100%;
+}
+
+.banner {
+	background-color: #f5f2ef;
+}
+
+.header {
+	background-color: #0c0c0c;
+	padding-top: 26px;
+}
+
+.header__user_block {
+	display: inline-block;
+	vertical-align: middle;
+	float: right;
+	border-bottom: 4px transparent solid; 
+	padding-bottom: 24px;
+	margin-right: 39px;
+}
+
+.header__user_block img {
+	padding-right: 10px;
+    vertical-align: middle;
+}
+
+.header__login {
+	font-size: 16px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #ffffff;
+    vertical-align: middle;
+}
+
+.header__login:hover {
+	border-bottom: 4px #ffffff solid;
+	padding-bottom: 24px;
+}
+
+.header__navigator {
+	display: inline-block;
+	margin: 0 auto; /* благодаря этому у меня все выравнивается по центру*/
+	padding: 0;
+	vertical-align: middle;
+	float: left;
+}
+
+.header__navigator_logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+.header__navigator li {
+	display: inline-block;
+	padding-right: 15px;
+    padding-left: 24px;
+}
+
+.header__navigator li:last-child {
+	padding-left: 30px;
+	padding-right: 0;
+}
+
+.header__navigator_link {
+	font-size: 16px;
+	font-weight: 700;
+	text-transform: uppercase;
+	color: #ffffff;
+	border-bottom: 2px transparent solid; 
+	padding-bottom: 24px;
+}
+
+.header__navigator_link:hover {
+	border-bottom: 4px #ffffff solid;
+}
+
+.adventage_item {
+	padding:0 10px;
+}
+.adventsge_item__title h1 {
+	margin: 0;
+	padding-top: 61px;
+	font-size: 30px;
+	text-transform: uppercase;
+	font-weight: bold;
+
+}
+
+.adventage_item__navigation {
+	padding-top:32px;
+	padding-bottom: 60px;
+	padding-left: 0;
+	margin: 0;
+}
+
+.adventage_item__navigation li{
+	display: inline-block;
+}
+
+.adventage_item__link {
+	font-size: 14px;
+	text-transform: uppercase;
+	font-weight: bold;
+	color: #000000;
+}
+
+.adventage_item__figure{
+	display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin: 0;
+}
+
+.adventage_item__figure-position {
+	display: inline-block;
+	padding: 0 17px;
+}
+
+.adventage_item__current_page  {
+	color: #aba9a7;
+}
+
+.gallery_item__main_photo {
+	padding-bottom: 21px;
+}
+
+.gallery_item__main_photo img{
+	width: 465px;
+	height: 500px;
+}
+
+.gallery_item__main_photo img:hover {
+	box-shadow: 0px 0px 19px 1px #a9a4a4;
+}
+
+.gallery_item__other_photo {
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 50px;
+}
+
+.gallery_item__other_photo:last-child {
+	margin-right: 0;
+}
+
+.gallery_item__other_photo img {
+	width: 140px;
+	height: 149px;
+}
+
+.gallery_item__other_photo img:hover {
+	box-shadow: 0px 0px 19px 1px #a9a4a4;
+}
+.price_item__availability {
+	font-size: 14px;
+	text-transform: uppercase;
+	color: #000000;
+	padding-top: 15px;
+}
+.price_item__availability b {
+	float: left;
+	display: inline-block;
+}
+
+.price_item__availability b:last-child {
+	float: right;
+	display: inline-block;
+	color: #aeaeae;
+}
+
+.price_item__adventage {
+	padding-top: 42px;
+	font-size: 14px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+.price_item__adventage p {
+	margin: 0;
+}
+
+.price_item__btn {
+	display: inline-block;
+	background-color: gray;
+	width: 180px;
+	height: 43px;
+	font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 1;
+    margin-top: 43px;
+}
+
+.price_item__cost {  
+    display: inline-block;
+    width: 100px;
+}
+
+.price_item__buy {
+	display: inline-block;
+	width: 77px;
+	height: 43px;
+	background-color: #000000;
+	color:#ffffff;
+	padding-top: 15px;
+}
+
+.price_item__const {
+    text-transform: uppercase;
+    margin-top: 65px;
+}
+
+.price_item__const h2 {
+	font-size: 30px;
+	margin-bottom: 40px;
+}
+
+.price_item__composition {
+	padding-left: 0;
+}
+
+.price_item__composition li {
+	list-style-type: none;
+	padding-bottom: 12px;
+	font-weight: 700;
+}
+
+.price_item__figure-position {
+	display: inline-block;
+	padding-left: 0;
+	padding-right: 7px;
+}
+
+.footer {
+	background-color: #1f1f1f;
+	padding-top: 58px;
+}
+
+.footer__contact p {
+	margin-top: 0px;
+	margin-bottom: 45px;
+	line-height: 23px;
+}
+
+.footer__contact b, a {
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+}
+
+.footer__social_list__title {
+	text-align: center;
+}
+
+.footer__social_list__title b {
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+	margin-right: 8px;
+}
+
+.footer__social_list__main {
+	margin-top: 18px;
+	text-align:center;
+}
+
+.footer__social_link {
+	display: inline-block;
+	vertical-align: middle;
+    margin-right: 7px;
+    width: 43px;
+    height: 43px;
+}
+
+.footer__social_link:last-child {
+	margin: 0;
+}
+
+.footer__social_list__main a {
+	background-repeat: no-repeat;
+	background-position: center;
+	background-color: black;
+}
+.social_vk {
+	background-image: url(../img/vk.png);
+}
+
+.social_f {
+	background-image: url(../img/f.png);
+}
+
+.social_insta {
+	background-image: url(../img/inst.png);
+}
+
+.footer__create b{
+	display: block;
+	font-weight: 700;
+	font-size: 14px;
+	text-transform: uppercase;
+	color: white;
+	text-align: right;
+	padding-right: 48px;
+	margin-bottom: 20px;
+}
+.footer_create-position_link {
+	text-align: right;
+	padding-right: 15px;
+}
+.footer__create_button {
+    border: 1px #000000 solid;
+    color: white;
+    background-color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    display: inline-block;
+    min-width: 140px;
+    min-height: 44px;
+    text-align: center;
+    padding-top: 11px;
+}

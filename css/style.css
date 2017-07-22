@@ -91,7 +91,7 @@ body {
 }
 
 .banner {
-	background-image: url(./img/tint.png);
+	background-image: url(../img/tint.png);
 	background-position: center;
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -450,15 +450,15 @@ body {
 	background-color: black;
 }
 .social_vk {
-	background-image: url(./img/vk.png);
+	background-image: url(../img/vk.png);
 }
 
 .social_f {
-	background-image: url(./img/f.png);
+	background-image: url(../img/f.png);
 }
 
 .social_insta {
-	background-image: url(./img/inst.png);
+	background-image: url(../img/inst.png);
 }
 
 .footer__create b{
