@@ -12,10 +12,13 @@ body {
 	font-size: 14px; 
 }
 
+button {
+	font-family: 'PT Sans Narrow', sans-serif;
+}
+
 .container {
 	max-width: 980px;
-	margin-right: auto;
-	margin-left: auto;
+	margin: 0 auto;
 	padding: 0 10px;
 }
 
@@ -100,6 +103,7 @@ body {
 .header {
 	background-color: #0c0c0c;
 	padding-top: 26px;
+	margin-bottom: 55px;
 }
 
 .header__user_block {
@@ -139,12 +143,12 @@ body {
 
 .header__navigator li {
 	display: inline-block;
-	padding-right: 15px;
+	padding-right: 16px;
     padding-left: 24px;
 }
 
 .header__navigator li:last-child {
-	padding-left: 30px;
+	padding-left: 25px;
 	padding-right: 0;
 }
 
@@ -162,7 +166,7 @@ body {
 }
 
 .adventage_logo {
-	margin:58px auto 71px auto;
+	margin:0 auto 74px auto;
 	text-align: center;
 }
 
@@ -177,13 +181,13 @@ body {
 	font-weight: bold;
 	text-transform: uppercase;
 	line-height: 30px;
-	margin-bottom: 19px;
+	margin-bottom: 25px;
 }
 
 .adventage_items__figure_position {
 	display: inline-block;
     text-align: center;
-    padding-top: 6px;
+    margin-bottom: 28px;
 }
 
 .adventage_items__figure {
@@ -196,21 +200,22 @@ body {
 }
 
 .item_cool-padding {
-	padding-right: 10px;
+	margin-right: 10px;
 }
 
 .item_expensive-padding {
-	padding-right: 25px; 
+	margin-right: 25px; 
 }
 
 .adventage_items__contet p {
 	font-size: 14px;
 	text-transform: uppercase;
-	margin-top: 27px;
 	font-weight: bold;
 	text-align: center;
-	line-height: 22px;
-	margin-bottom: 80px;
+	line-height: 24px;
+	margin: 0;
+	margin-bottom: 78px;
+	letter-spacing: 0.3px;
 }
 
 .price_items {
@@ -223,8 +228,8 @@ body {
 
 .prise_block {
 	background-color: white;
-	margin-bottom: 34px;
-	background-image: url(./img/layer.png);
+	margin-bottom: 33px;
+	background-image: url(../img/layer.png);
 	background-size: contain;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -232,7 +237,9 @@ body {
 
 .price_items__item {
 	color:black;
-	height: 430px;
+	height: 385px;
+	margin-left: 75px;
+	margin-top: 46px;
 }
 
 .price-padding {
@@ -243,17 +250,15 @@ body {
 	font-size: 30px;
 	font-weight: bold;
 	text-transform: uppercase;
-	padding-top: 46px;
-    padding-left: 77px;
     margin:0;
+    margin-bottom: 26px;
+    letter-spacing: 0.3px;
 }
 
 .price_items__contant {
-	margin: 0;
-	padding-top: 28px;
-	padding-left: 75px;
-	padding-right:65px; 
-	line-height: 22px;
+	margin: 0; 
+	line-height: 24px;
+	margin-right: 75px;
 }
 
 .price_items__contant b {
@@ -262,37 +267,39 @@ body {
 	text-transform: uppercase;
 }
 
+
 .conatant_news p {
 	margin: 0;
 	text-transform: uppercase;
 	font-weight: 700;
 	line-height: 23px;
+	letter-spacing: 0.1px;
 }
 
 .conatant_news time {
-	margin-bottom: 30px;
+	margin-bottom: 29px;
 	display: block;
 }
 
 .contant_news__button {
-    border: 1px #000000 solid;
+    display: inline-block;
+    width: 140px;
+	height: 44px;
+	border: 1px #000000 solid;
     color: white;
     background-color: #000000;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
-    display: inline-block;
-    min-width: 140px;
-    min-height: 41px;
+    line-height: 3;
+    vertical-align: middle;
     text-align: center;
-    padding-top: 11px;
-    margin-top: 5px;
 }
 
 .price_items__contant img {
-    margin-bottom: 38px;
-    margin-top: 12px;
-    margin-left: 5px;
+    margin-bottom: 36px;
+    margin-left: 6px;
+    margin-top: 13px;
 }
 
 .price_gallery__button_prew {
@@ -304,67 +311,77 @@ body {
     font-weight: 700;
     margin-right: 17px;
     display: inline-block;
-    min-width: 140px;
-    min-height: 44px;
+    width: 140px;
+    height: 44px;
+    outline: none;
+    letter-spacing: 0.2px;
 }
 
 .price_gallery__button_next {
     border: 1px #000000 solid;
-    padding: 13px 43px;
-    color: white;
-    background-color: #000000;
-    font-size: 12px;
-    text-transform: uppercase;
-    font-weight: 700;
-    min-width: 140px;
-    min-height: 45px;
-}
-
-.contant_contact__adress {
-	margin-bottom: 30px;
-}
-
-.contant_contact__worktime {
-	margin-bottom: 50px;
-}
-
-.contant_contact__button_map {
-	display: inline-block;
-    border: 1px #000000 solid;
     color: white;
     background-color: #000000;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
-    margin-right: 17px;
-    min-width: 140px;
-    min-height: 44px;
+    width: 140px;
+    height: 45px;
+    outline: none;
+}
+
+.contant_contact__adress {
+	margin-bottom: 25px;
+	letter-spacing: 0.15px;
+}
+
+.contant_contact__worktime {
+	margin-bottom: 45px;
+	letter-spacing: 0.45px;
+}
+
+.contant_contact__button_map {
+    display: inline-block;
+    width: 140px;
+	height: 44px;
+	margin-right: 17px;
+	border: 1px #000000 solid;
+    color: white;
+    background-color: #000000;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: 700;
+    line-height: 3;
+    vertical-align: middle;
     text-align: center;
-    padding-top: 10px;
+    letter-spacing: 0.1px;
 }
 
 .contant_contact__button_recall {
     display: inline-block;
-    border: 1px #000000 solid;
+    width: 140px;
+	height: 44px;
+	border: 1px #000000 solid;
     color: white;
     background-color: #000000;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
-    min-width: 140px;
-    min-height: 44px;
+    line-height: 3;
+    vertical-align: middle;
     text-align: center;
-    padding-top: 10px;
+    letter-spacing: 0.3px;
 }
+
 .contant_note__input {
-	width: 138px;
-	height: 40px;
-	margin-top: 13px;
-	margin-right: 20px;
-	margin-bottom: 10px;
-	padding: 15px 16px 14px;
-	vertical-align: middle;
-	border-color: black;
+	width: 139px;
+    height: 42px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    vertical-align: middle;
+    border-color: black;
+    outline: none;
+    padding-left: 15px;
+    font-size: 12px;
 }
 
 .contant_note__input::-webkit-input-placeholder { 
@@ -379,18 +396,25 @@ body {
 
 .contant_note p {
 	margin:0;
-	padding-bottom: 17px;
+	margin-bottom: 27px;
 }
+
+.contant_note__send_data {
+	width: 325px;
+}
+
 .contant_note__sent_button {
     min-width: 300px;
     min-height: 44px;
-    margin-top: 26px;
+    margin-top: 15px;
     display: block;
     background-color: black;
     text-align: center;
     color: white;
+    font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
+    outline: none;
 }
 
 .contant_note__input_block button{
@@ -402,10 +426,15 @@ body {
 	padding-top: 58px;
 }
 
+.footer__contact {
+	width: 315px;
+}
+
 .footer__contact p {
-	margin-top: 0px;
-	margin-bottom: 45px;
-	line-height: 23px;
+    margin-top: 0;
+    margin-bottom: 45px;
+    line-height: 23px;
+    letter-spacing: 0.2px;
 }
 
 .footer__contact b, a {
@@ -424,24 +453,24 @@ body {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: white;
-	margin-right: 8px;
-}
-
-.footer__social_list__main {
-	margin-top: 18px;
-	text-align:center;
+	display: inline-block;
+	margin-bottom: 18px;
 }
 
 .footer__social_link {
 	display: inline-block;
 	vertical-align: middle;
-    margin-right: 7px;
     width: 43px;
     height: 43px;
 }
 
 .footer__social_link:last-child {
 	margin: 0;
+}
+
+.footer__social_list__main {
+	text-align: left;
+	margin-left: 80px;
 }
 
 .footer__social_list__main a {
@@ -451,10 +480,12 @@ body {
 }
 .social_vk {
 	background-image: url(../img/vk.png);
+	margin-right: 4px;
 }
 
 .social_f {
 	background-image: url(../img/f.png);
+	margin-right: 4px;
 }
 
 .social_insta {
@@ -468,7 +499,7 @@ body {
 	text-transform: uppercase;
 	color: white;
 	text-align: right;
-	padding-right: 48px;
+	padding-right: 47px;
 	margin-bottom: 20px;
 }
 .footer_create-position_link {
@@ -476,15 +507,17 @@ body {
 	padding-right: 15px;
 }
 .footer__create_button {
-    border: 1px #000000 solid;
+    display: inline-block;
+    width: 140px;
+	height: 44px;
+	border: 1px #000000 solid;
     color: white;
     background-color: #000000;
     font-size: 14px;
     text-transform: uppercase;
     font-weight: 700;
-    display: inline-block;
-    min-width: 140px;
-    min-height: 44px;
+    line-height: 3;
+    vertical-align: middle;
     text-align: center;
-    padding-top: 11px;
+    letter-spacing: 0.1px;
 }
