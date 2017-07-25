@@ -141,8 +141,8 @@ body {
 
 .header__navigator li {
 	display: inline-block;
-	padding-right: 12px;
-    padding-left: 24px;
+	padding-right: 7px;
+    padding-left: 30px;
 }
 
 .header__navigator li:last-child {
@@ -172,11 +172,10 @@ body {
 	text-transform: uppercase;
 	font-weight: bold;
 	margin-bottom: 20px;
-
 }
 
 .adventage_item__navigation {
-	padding-bottom: 60px;
+	margin-bottom: 60px;
 	padding-left: 0;
 	margin: 0;
 }
@@ -194,15 +193,15 @@ body {
 }
 
 .adventage_item__figure{
-	width: 7px;
+    width: 7px;
     height: 7px;
     background-color: black;
     transform: rotate(45deg);
     margin: 0;
-    display: block;
+    display: inline-block;
     margin-bottom: 2px;
-    margin-left: 16px;
-    margin-right: 14px;
+    margin-left: 13px;
+    margin-right: 17px;
 }
 
 .adventage_item__figure-position {
@@ -218,7 +217,7 @@ body {
 }
 
 .gallery_item__main_photo {
-	margin-bottom: 21px;
+	margin-bottom: 40px;
 }
 
 .gallery_item__main_photo img{
@@ -231,22 +230,28 @@ body {
 }
 
 .gallery_item__other_photo {
-	margin-bottom: 45px;
+	margin-bottom: 49px;
 }
 
 .gallery_item__other_photo img {
 	width: 100%;
 }
-
+	
 .gallery_item__other_photo img:hover {
 	box-shadow: 0px 0px 19px 1px #a9a4a4;
 }
+
+.price_item {
+	margin-left: 85px;
+}
+
 .price_item__availability {
 	font-size: 14px;
-	text-transform: uppercase;
-	color: #000000;
-	margin-bottom: 42px;
-	margin-top: 23px;
+    text-transform: uppercase;
+    color: #000000;
+    margin-bottom: 30px;
+    margin-top: 23px;
+    line-height: 23px;
 }
 .price_item__availability b {
 	float: left;
@@ -260,37 +265,40 @@ body {
 }
 
 .price_item__adventage {
-	font-size: 14px;
-	font-weight: bold;
-	text-transform: uppercase;
-	margin-bottom: 43px; 
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 41px;
 }
+
 .price_item__adventage p {
 	margin: 0;
+	line-height: 23px;
 }
 
 .price_item__btn {
-	display: inline-block;
-	background-color: gray;
-	font-size: 14px;
+    display: inline-block;
+    background-color: gray;
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
-    text-align: center;
-    margin-bottom: 65px;
+    margin-bottom: 61px;
 }
 
 .price_item__cost {  
     display: inline-block;
-    width: 100px;
+    width: 107px;
+    padding-left: 28px;
 }
 
 .price_item__buy {
-	display: inline-block;
-	width: 77px;
-	height: 43px;
-	background-color: #000000;
-	color:#ffffff;
-	line-height: 3;
+    display: inline-block;
+    width: 78px;
+    height: 44px;
+    background-color: #000000;
+    color: #ffffff;
+    line-height: 3;
+    padding-left: 18px;
 }
 
 .price_item__const {
@@ -298,9 +306,10 @@ body {
 }
 
 .price_item__const h2 {
-	font-size: 30px;
+	font-size: 23px;
 	margin:0;
-	margin-bottom: 40px;
+	margin-bottom: 31px;
+	letter-spacing: 0.35px;
 }
 
 .price_item__composition {
@@ -310,7 +319,7 @@ body {
 
 .price_item__composition li {
 	list-style-type: none;
-	margin-bottom: 12px;
+	margin-bottom: 6px;
 	font-weight: 700;
 }
 
@@ -319,20 +328,33 @@ body {
 	margin-right: 7px;
 }
 
+.price_item__figure {
+	width: 7px;
+    height: 7px;
+    background-color: black;
+    transform: rotate(45deg);
+    margin: 0;
+    display: inline-block;
+    margin-bottom: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
 .footer {
 	background-color: #1f1f1f;
-	padding-top: 58px;
+	padding-top: 57px;
 }
 
 .footer__contact {
-	width: 315px;
+	width: 100%;
 }
 
 .footer__contact p {
     margin-top: 0;
     margin-bottom: 45px;
-    line-height: 23px;
+    line-height: 24px;
     letter-spacing: 0.2px;
+    padding-left: 11px;
 }
 
 .footer__contact b, a {
@@ -340,6 +362,7 @@ body {
 	font-size: 14px;
 	text-transform: uppercase;
 	color: white;
+	line-height: 0;
 }
 
 .footer__social_list__title {
@@ -348,11 +371,12 @@ body {
 
 .footer__social_list__title b {
 	font-weight: 700;
-	font-size: 14px;
-	text-transform: uppercase;
-	color: white;
-	display: inline-block;
-	margin-bottom: 18px;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: white;
+    display: inline-block;
+    margin-bottom: 18px;
+    padding-right: 45px;
 }
 
 .footer__social_link {
@@ -367,8 +391,8 @@ body {
 }
 
 .footer__social_list__main {
-	text-align: left;
-	margin-left: 80px;
+    text-align: left;
+    margin-left: 17px;
 }
 
 .footer__social_list__main a {
@@ -376,6 +400,7 @@ body {
 	background-position: center;
 	background-color: black;
 }
+
 .social_vk {
 	background-image: url(../img/vk.png);
 	margin-right: 4px;
@@ -397,13 +422,14 @@ body {
 	text-transform: uppercase;
 	color: white;
 	text-align: right;
-	padding-right: 47px;
+	padding-right: 25px;
 	margin-bottom: 20px;
 }
+
 .footer_create-position_link {
 	text-align: right;
-	padding-right: 15px;
 }
+
 .footer__create_button {
     display: inline-block;
     width: 140px;
