@@ -9,7 +9,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 14px; 
+	font-size: 0; 
 }
 
 button {
@@ -17,7 +17,7 @@ button {
 }
 
 .container {
-	max-width: 980px;
+	max-width: 1024px;
 	margin: 0 auto;
 	padding: 0 10px;
 }
@@ -102,7 +102,6 @@ button {
 
 .header {
 	background-color: #0c0c0c;
-	padding-top: 26px;
 	margin-bottom: 55px;
 }
 
@@ -110,14 +109,17 @@ button {
 	display: inline-block;
 	vertical-align: middle;
 	float: right;
-	border-bottom: 4px transparent solid; 
-	padding-bottom: 24px;
 	margin-right: 39px;
+	padding:20px 25px;
 }
 
 .header__user_block img {
 	padding-right: 10px;
     vertical-align: middle;
+}
+
+.header__user_block:hover {
+	background-color: #242424;
 }
 
 .header__login {
@@ -128,28 +130,21 @@ button {
     vertical-align: middle;
 }
 
-.header__login:hover {
-	border-bottom: 4px #ffffff solid;
-	padding-bottom: 24px;
-}
 
 .header__navigator {
 	display: inline-block;
-	margin: 0 auto; /* благодаря этому у меня все выравнивается по центру*/
 	padding: 0;
-	vertical-align: middle;
 	float: left;
+	font-size: 0;
 }
 
 .header__navigator li {
 	display: inline-block;
-	padding-right: 16px;
-    padding-left: 24px;
+	padding:20px 25px;
 }
 
-.header__navigator li:last-child {
-	padding-left: 25px;
-	padding-right: 0;
+.header__navigator li:hover {
+	background-color: #242424;
 }
 
 .header__navigator_link {
@@ -157,12 +152,7 @@ button {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #ffffff;
-	border-bottom: 2px transparent solid; 
-	padding-bottom: 24px;
-}
-
-.header__navigator_link:hover {
-	border-bottom: 4px #ffffff solid;
+	
 }
 
 .adventage_logo {
@@ -237,7 +227,7 @@ button {
 
 .price_items__item {
 	color:black;
-	height: 385px;
+	min-height: 385px;
 	margin-left: 75px;
 	margin-top: 46px;
 }
@@ -271,6 +261,7 @@ button {
 .conatant_news p {
 	margin: 0;
 	text-transform: uppercase;
+	font-size: 14px;
 	font-weight: 700;
 	line-height: 23px;
 	letter-spacing: 0.1px;
@@ -278,14 +269,14 @@ button {
 
 .conatant_news time {
 	margin-bottom: 29px;
+	font-size: 12px;
 	display: block;
 }
 
 .contant_news__button {
     display: inline-block;
     width: 140px;
-	height: 44px;
-	border: 1px #000000 solid;
+	height: 45px;
     color: white;
     background-color: #000000;
     font-size: 14px;
@@ -303,7 +294,6 @@ button {
 }
 
 .price_gallery__button_prew {
-    border: 1px #000000 solid;
     color: white;
     background-color: #000000;
     font-size: 14px;
@@ -312,13 +302,12 @@ button {
     margin-right: 17px;
     display: inline-block;
     width: 140px;
-    height: 44px;
+    height: 45px;
     outline: none;
     letter-spacing: 0.2px;
 }
 
 .price_gallery__button_next {
-    border: 1px #000000 solid;
     color: white;
     background-color: #000000;
     font-size: 14px;
@@ -335,16 +324,15 @@ button {
 }
 
 .contant_contact__worktime {
-	margin-bottom: 45px;
+	margin-bottom: 25px;
 	letter-spacing: 0.45px;
 }
 
 .contant_contact__button_map {
     display: inline-block;
     width: 140px;
-	height: 44px;
-	margin-right: 17px;
-	border: 1px #000000 solid;
+	height: 45px;
+	margin-right: 20px;
     color: white;
     background-color: #000000;
     font-size: 14px;
@@ -359,8 +347,7 @@ button {
 .contant_contact__button_recall {
     display: inline-block;
     width: 140px;
-	height: 44px;
-	border: 1px #000000 solid;
+	height: 45px;
     color: white;
     background-color: #000000;
     font-size: 14px;
@@ -404,10 +391,9 @@ button {
 }
 
 .contant_note__sent_button {
-    min-width: 300px;
-    min-height: 44px;
+    width: 300px;
+    min-height: 45px;
     margin-top: 15px;
-    display: block;
     background-color: black;
     text-align: center;
     color: white;
@@ -469,8 +455,7 @@ button {
 }
 
 .footer__social_list__main {
-	text-align: left;
-	margin-left: 80px;
+	text-align: center;
 }
 
 .footer__social_list__main a {
@@ -509,8 +494,7 @@ button {
 .footer__create_button {
     display: inline-block;
     width: 140px;
-	height: 44px;
-	border: 1px #000000 solid;
+	height: 45px;
     color: white;
     background-color: #000000;
     font-size: 14px;
@@ -520,4 +504,142 @@ button {
     vertical-align: middle;
     text-align: center;
     letter-spacing: 0.1px;
+}
+
+@media screen and (max-width: 768px) {
+
+.header__navigator li{
+	padding: 20px 15px;
+}
+
+.header__user_block {
+	margin-right: 0;
+}
+
+.adventage_items__contet p {
+	margin-bottom: 40px;
+}
+
+.price_items__title {
+	font-size: 25px;
+	margin-bottom: 25px;
+}
+
+.price_items__item {
+	min-height: 350px;
+    margin-left: 40px;
+    margin-top: 40px;
+}
+
+.conatant_news p {
+	line-height: 18px;
+}
+
+.conatant_news time {
+	margin-bottom: 15px;
+}
+
+.price_items__contant {
+	margin-right: 40px;
+	line-height: 18px;
+}
+
+.price_items__contant img {
+    margin-bottom: 40px;
+    margin-left: 0px;
+    margin-top: 0px;
+    max-width: 93%;
+}
+
+.contant_news__button, .price_gallery__button_prew, .price_gallery__button_next, 
+.contant_contact__button_map, .contant_contact__button_recall {
+	width: 120px;
+}
+
+.contant_note__input {
+	width: 125px;
+}
+
+.contant_note__sent_button {
+	width: 273px;
+}
+
+.footer__contact p {
+	line-height: 18px;
+}
+
+.footer__contact b, a {
+	font-size: 12px;
+}
+}
+
+@media screen and (max-width: 320px) {
+
+.header__user_block {
+	display: block;
+	float: none;
+	text-align: center;
+}
+
+.header__navigator {
+	display: block;
+    padding: 0 20px;
+    text-align: left;
+    float: none;
+}
+
+.header__navigator li {
+	display: block;
+    border: 1px #242424 solid;
+    margin-bottom: 5px;
+}
+
+.header__navigator li:last-child {
+	margin-bottom: 25px;
+}
+
+.adventage_logo img {
+	max-width: 90%;
+}
+
+.col-4 {
+	float: none;
+	width: 100%;
+}
+
+.prise_block {
+	background-image: none;
+}
+
+.col-6 {
+	width: 100%;
+}
+
+.price_items__item {
+	margin-left: 5%;
+    margin-top: 10%;
+}
+.price_items__title {
+	text-align: center;
+}
+
+.price_items__contant {
+	margin-right: 5%;
+}
+
+.conatant_news p {
+	text-align: justify;
+}
+
+.contant_news__button {
+	margin-left: 25%;
+}
+
+.price_items__contant img {
+	max-width: 100%;
+}
+
+.price_gallery__button_prew {
+	margin-right: 12px;
+}
 }

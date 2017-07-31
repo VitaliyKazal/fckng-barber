@@ -9,7 +9,7 @@ body {
 	padding: 0;
 	margin: 0;
 	font-family: 'PT Sans Narrow', sans-serif;
-	font-size: 14px; 
+	font-size: 0; 
 }
 
 .container {
@@ -96,7 +96,6 @@ body {
 
 .header {
 	background-color: #0c0c0c;
-	padding-top: 26px;
 	margin-bottom: 50px;
 }
 
@@ -104,10 +103,11 @@ body {
 	display: inline-block;
 	vertical-align: middle;
 	float: right;
-	border-bottom: 4px transparent solid; 
-	padding-bottom: 24px;
+	padding:20px 25px;
 }
-
+.header__user_block:hover {
+	background-color: #242424;
+}
 .header__user_block img {
     vertical-align: middle;
 }
@@ -121,33 +121,48 @@ body {
     margin-left: 11px;
 }
 
-.header__login:hover {
-	border-bottom: 4px #ffffff solid;
-	padding-bottom: 24px;
-}
-
 .header__navigator {
 	display: inline-block;
-	margin: 0 auto; /* благодаря этому у меня все выравнивается по центру*/
-	padding: 0;
 	vertical-align: middle;
 	float: left;
+	padding: 0;
+	margin: 0;
 }
 
 .header__navigator_logo {
 	display: inline-block;
 	vertical-align: middle;
+	padding-bottom: 14px;
+	padding-right: 20px;
 }
 
 .header__navigator li {
 	display: inline-block;
-	padding-right: 7px;
-    padding-left: 30px;
+	padding: 20px 25px;
 }
 
-.header__navigator li:last-child {
-	padding-left: 30px;
-	padding-right: 0;
+.header__navigator_active {
+	position: relative;
+}
+
+.header__navigator .header__navigator_active:hover {
+	background: none;
+}
+
+.header__navigator_active::after{
+	position: absolute;
+	content: " ";
+	height: 5px;
+	background-color: #cccccc;
+	bottom: 0;
+	left: 25px;
+	right: 25px;
+}
+
+
+
+.header__navigator li:hover {
+	background-color: #242424;
 }
 
 .header__navigator_link {
@@ -155,12 +170,6 @@ body {
 	font-weight: 700;
 	text-transform: uppercase;
 	color: #ffffff;
-	border-bottom: 2px transparent solid; 
-	padding-bottom: 24px;
-}
-
-.header__navigator_link:hover {
-	border-bottom: 4px #ffffff solid;
 }
 
 .adventage_items {
@@ -183,6 +192,14 @@ body {
 .adventage_item__navigation li{
 	display: inline-block;
 	margin-bottom: 55px;
+}
+
+.adventage_item__link:hover {
+	color: #cccccc;
+}
+
+.adventage_item__link:active {
+	color: #aba9a7;
 }
 
 .adventage_item__link {
@@ -208,10 +225,12 @@ body {
 	display: inline-block;
 }
 
-.adventage_item__current_page  {
+.adventage__active_page {
 	color: #aba9a7;
 }
-
+.adventage__active_page:hover {
+	color: #aba9a7;
+}
 .gallery_items {
 	padding: 0 10px;
 }
@@ -301,6 +320,11 @@ body {
     padding-left: 18px;
 }
 
+.price_item__buy:hover {
+	background-color: #ffffff;
+	color: #000000;
+}
+
 .price_item__const {
     text-transform: uppercase;
 }
@@ -320,6 +344,8 @@ body {
 .price_item__composition li {
 	list-style-type: none;
 	margin-bottom: 6px;
+	font-size: 14px;
+	text-transform: uppercase;
 	font-weight: 700;
 }
 
