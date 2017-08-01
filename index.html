@@ -4,7 +4,14 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>barbershop</title>
-	<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+	<script type="text/javascript" src="./js/jquery-3.2.1.js"></script>
+	<script type="text/javascript"> 
+		$(function(){
+			$('.hamburger_menu__icon').click(function(){
+				$('.header__navigator').toggleClass('.header__navigator_opened');
+			})
+		})
+	</script>
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet"> 
 </head>
@@ -12,11 +19,14 @@
 	<div class="banner">
 			<header class="header">
 				<div class="container clearfix">
+
 					<div class="header__user_block"> 
 						<img src="./img/logo.png" alt="enter">
 						<a href="#" class="header__login">вход</a>
 					</div>
 					
+					<div class="hamburger_menu__icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 34 24" height="24px" id="Layer_1" version="1.1" viewBox="0 0 34 24" width="34px" xml:space="preserve"><g><rect height="6" width="34"/><rect height="6" width="34" y="9"/><rect height="6" width="34" y="18"/></g></svg></div>
+
 					<ul class="header__navigator">
 						<li><a href="#" class="header__navigator_link">главная</a></li>
 						<li><a href="#" class="header__navigator_link">информация</a></li>

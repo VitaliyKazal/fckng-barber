@@ -105,6 +105,10 @@ button {
 	margin-bottom: 55px;
 }
 
+.hamburger_menu__icon {
+	display: none;
+}
+
 .header__user_block {
 	display: inline-block;
 	vertical-align: middle;
@@ -130,7 +134,6 @@ button {
     vertical-align: middle;
 }
 
-
 .header__navigator {
 	display: inline-block;
 	padding: 0;
@@ -151,8 +154,7 @@ button {
 	font-size: 16px;
 	font-weight: 700;
 	text-transform: uppercase;
-	color: #ffffff;
-	
+	color: #ffffff;	
 }
 
 .adventage_logo {
@@ -575,23 +577,38 @@ button {
 
 @media screen and (max-width: 320px) {
 
+.hamburger_menu__icon {
+	display: block;
+	float: left;
+	margin-top:20px;
+	margin-left: 5%;
+}
+
+.hamburger_menu__icon svg g rect {
+	fill: #8c8686;
+	
+}
+
 .header__user_block {
 	display: block;
-	float: none;
-	text-align: center;
+	float: right;
 }
 
 .header__navigator {
-	display: block;
-    padding: 0 20px;
-    text-align: left;
-    float: none;
+	display: none;
 }
 
 .header__navigator li {
 	display: block;
     border: 1px #242424 solid;
     margin-bottom: 5px;
+}
+
+.header__navigator_opened {
+	display: block;
+	padding: 0 20px;
+    text-align: left;
+    float: none;
 }
 
 .header__navigator li:last-child {
