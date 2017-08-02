@@ -578,37 +578,33 @@ button {
 @media screen and (max-width: 320px) {
 
 .hamburger_menu__icon {
-	display: block;
-	float: left;
+	display: inline-block;
 	margin-top:20px;
 	margin-left: 5%;
 }
 
 .hamburger_menu__icon svg g rect {
 	fill: #8c8686;
-	
 }
 
 .header__user_block {
 	display: block;
 	float: right;
+	margin-right: -10px;
 }
 
 .header__navigator {
 	display: none;
+	margin-top: 25px;
+    margin-left: 5%;
+    margin-right: 5%;
+    float: none;
 }
 
 .header__navigator li {
 	display: block;
     border: 1px #242424 solid;
     margin-bottom: 5px;
-}
-
-.header__navigator_opened {
-	display: block;
-	padding: 0 20px;
-    text-align: left;
-    float: none;
 }
 
 .header__navigator li:last-child {
@@ -632,24 +628,31 @@ button {
 	width: 100%;
 }
 
-.price_items__item {
-	margin-left: 5%;
-    margin-top: 10%;
-}
-.price_items__title {
-	text-align: center;
-}
-
-.price_items__contant {
-	margin-right: 5%;
-}
-
 .conatant_news p {
 	text-align: justify;
 }
 
+.conatant_news time {
+	margin-bottom: 30px;
+}
+
 .contant_news__button {
 	margin-left: 25%;
+}
+
+.price_items__item {
+	margin-left: 5%;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+
+.price_items__title {
+	text-align: center;
+	font-size: 22px;
+}
+
+.price_items__contant {
+	margin-right: 0;
 }
 
 .price_items__contant img {
@@ -658,5 +661,44 @@ button {
 
 .price_gallery__button_prew {
 	margin-right: 12px;
+}
+
+.contant_contact__button_map {
+	margin-right: 10px;
+}
+
+.contant_note p {
+	text-align: center;
+}
+
+.contant_note__input {
+	margin-bottom: 10px;
+	width: 250px;
+	display: block;
+}
+
+.contant_note__send_data {
+	width: auto;
+}
+
+.contant_note__sent_button {
+	width: 250px;
+	margin-bottom: 20px;
+}
+
+.footer__social_list__title {
+	margin-bottom: 20px;
+}
+
+.footer__create b {
+	text-align: center;
+	margin-bottom: 10px;
+	padding: 0;
+}
+
+.footer_create-position_link {
+	text-align: center;
+	margin-bottom: 20px;
+	padding: 0; 
 }
 }
