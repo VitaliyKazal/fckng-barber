@@ -581,10 +581,23 @@ button {
 	display: inline-block;
 	margin-top:20px;
 	margin-left: 5%;
+	position: relative;
 }
 
-.hamburger_menu__icon svg g rect {
-	fill: #8c8686;
+.hamburger_menu {
+	position: absolute;
+	content: "";
+	background-color: #242424;
+	width: 25px;
+	height: 5px;
+}
+
+.hamburger_menu:nth-child(2) {
+	top:8px;
+}
+
+.hamburger_menu:last-child {
+	top: 16px;
 }
 
 .header__user_block {
@@ -595,7 +608,11 @@ button {
 
 .header__navigator {
 	display: none;
-	margin-top: 25px;
+}
+
+.active {
+	display: block;
+	margin-top: 35px;
     margin-left: 5%;
     margin-right: 5%;
     float: none;

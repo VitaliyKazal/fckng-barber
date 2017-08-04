@@ -8,7 +8,7 @@
 	<script type="text/javascript"> 
 		$(function(){
 			$('.hamburger_menu__icon').click(function(){
-				$('.header__navigator') .toggle("slow");
+				$('.header__navigator') .toggleClass('active');
 			})
 		})
 	</script>
@@ -25,8 +25,11 @@
 						<a href="#" class="header__login">вход</a>
 					</div>
 					
-					<div class="hamburger_menu__icon"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" enable-background="new 0 0 34 24" height="24px" id="Layer_1" version="1.1" viewBox="0 0 34 24" width="34px" xml:space="preserve"><g><rect height="6" width="34"/><rect height="6" width="34" y="9"/><rect height="6" width="34" y="18"/></g></svg></div>
-
+					<div class="hamburger_menu__icon">
+						<span class="hamburger_menu"></span>
+						<span class="hamburger_menu"></span>
+						<span class="hamburger_menu"></span>
+					</div>
 					<ul class="header__navigator">
 						<li><a href="#" class="header__navigator_link">главная</a></li>
 						<li><a href="#" class="header__navigator_link">информация</a></li>
