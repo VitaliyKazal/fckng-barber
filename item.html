@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Barbershop_item</title>
 	<link rel="stylesheet" type="text/css" href="./css/style_item.css">
 	<link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow:400,700" rel="stylesheet"> 
@@ -10,26 +11,33 @@
 	<div class="banner">
 			<header class="header">
 				<div class="container clearfix">
-					<div class="header__user_block"> 
-						<img src="./img/logo.png" alt="enter">
-						<a href="#" class="header__login">вход</a>
+					<div class="row">
+						<div class="header__user_block"> 
+							<img src="./img/logo.png" alt="enter">
+							<a href="#" class="header__login">вход</a>
+						</div>
+
+						<div class="hamburger_menu__icon">
+							<span class="hamburger_menu"></span>
+							<span class="hamburger_menu"></span>
+							<span class="hamburger_menu"></span>
+						</div>
+
+							<a href="#" class="header_logo__for_Mobile">
+								<img src="./img/Logo-header.png" alt="logo">
+							</a>
+
+						<ul class="header__navigator">
+							<a href="#" class="header__navigator_logo">
+								<img src="./img/Logo-header.png" alt="logo">
+							</a>
+							<li class="header__navigator_active"><a href="#" class="header__navigator_link">информация</a></li>
+							<li><a href="#" class="header__navigator_link">новости</a></li>
+							<li><a href="#" class="header__navigator_link">прайс-лист</a></li>
+							<li><a href="#" class="header__navigator_link">магазин</a></li>
+							<li><a href="#" class="header__navigator_link">контакты</a></li>
+						</ul>
 					</div>
-					
-					<input type="checkbox" id="hamburger_menu" class="hamburger_menu">
-					<label for="hamburger_menu" class="hambureger_container"></label>
-
-					<span class="hamburger_menu__button"></span>
-					<ul class="header__navigator">
-						<a href="#" class="header__navigator_logo">
-							<img src="./img/Logo-header.png" alt="logo">
-						</a>
-						<li class="header__navigator_active"><a href="#" class="header__navigator_link">информация</a></li>
-						<li><a href="#" class="header__navigator_link">новости</a></li>
-						<li><a href="#" class="header__navigator_link">прайс-лист</a></li>
-						<li><a href="#" class="header__navigator_link">магазин</a></li>
-						<li><a href="#" class="header__navigator_link">контакты</a></li>
-					</ul>
-
 				</div>
 			</header>
 
@@ -85,6 +93,13 @@
 										</div>
 									</div>
 								</div>
+								<fieldset class="raiting">
+									<input type="radio" id="stars_5" name="raiting" value="5"><label for="stars_5" class="full_star fa"></label>
+									<input type="radio" id="stars_4" name="raiting" value="4"><label for="stars_4" class="full_star fa"></label>
+									<input type="radio" id="stars_3" name="raiting" value="3"><label for="stars_3" class="full_star fa"></label>
+									<input type="radio" id="stars_2" name="raiting" value="2"><label for="stars_2" class="full_star fa"></label>
+									<input type="radio" id="stars_1" name="raiting" value="1"><label for="stars_1" class="full_star fa"></label>
+								</fieldset>
 							</div>
 							<!--finish sliders-->
 						</div>
@@ -177,5 +192,16 @@
 			</div>
 		</footer>
 		</div>
+
+	<script src='https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+	<script type="text/javascript"> 
+		$(function(){
+			$('.hamburger_menu__icon').click(function(){
+				$('.header__navigator') .toggleClass('active');
+				$('.hamburger_menu') .toggleClass('opened')
+			})
+		})
+	</script>
+	<!--scripts for burger menu-->
 </body>
 </html>
